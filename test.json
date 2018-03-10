@@ -1,8 +1,7 @@
 {
-"containerDefinitions":[
+  "containerDefinitions": [
     {
-      "volumesFrom": [],
-      "memory": 500,
+      "memory": 128,
       "portMappings": [
         {
           "hostPort": 80,
@@ -11,20 +10,17 @@
         }
       ],
       "essential": true,
-      "mountPoints": [],
       "name": "test-container",
-      "environment": [],
-      "image": "761536657211.dkr.ecr.us-east-2.amazonaws.com/test-project:v_${BUILD_NUMBER}",
-      "cpu": 0,
-      "memoryReservation": 300,
-			"logConfiguration": {
-				"logDriver": "awslogs",
-				"options": {
-				"awslogs-group": "prod-tpo-log/ecs-task",
-				"awslogs-region": "us-east-1",
-				"awslogs-stream-prefix": "auditservice"
-				}
-			}      
+      "image": "nginx",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "ecs-log-streaming",
+          "awslogs-region": "us-east-2"
+        }
+      },
+      "cpu": 0
     }
-  ]
+  ],
+  "family": "test"
 }
