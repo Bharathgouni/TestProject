@@ -12,13 +12,6 @@
       "essential": true,
       "name": "test-container",
       "image": "nginx",
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "ecs-log-streaming",
-          "awslogs-region": "us-east-2"
-        }
-      },
       "cpu": 0
     }
   ],
