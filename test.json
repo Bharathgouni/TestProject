@@ -12,10 +12,9 @@
       ],
       "essential": true,
       "mountPoints": [],
-      "name": "test-service",
+      "name": "test-container",
       "environment": [],
       "image": "761536657211.dkr.ecr.us-east-2.amazonaws.com/test-project:v_${BUILD_NUMBER}",
       "cpu": 0,
       "memoryReservation": 300
-  ]
 }
