@@ -14,7 +14,7 @@
       "mountPoints": [],
       "name": "test-service",
       "environment": [],
-      "image": "761536657211.dkr.ecr.us-east-2.amazonaws.com/test-project:v_1",
+      "image": "761536657211.dkr.ecr.us-east-2.amazonaws.com/test-project:v_${BUILD_NUMBER}",
       "cpu": 0,
       "memoryReservation": 300
   ]
