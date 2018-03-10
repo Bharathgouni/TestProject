@@ -1,0 +1,21 @@
+{
+"containerDefinitions":[
+    {
+      "volumesFrom": [],
+      "memory": 500,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 9090,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "mountPoints": [],
+      "name": "test-service",
+      "environment": [],
+      "image": "761536657211.dkr.ecr.us-east-2.amazonaws.com/test-project:v_1",
+      "cpu": 0,
+      "memoryReservation": 300
+  ]
+}
