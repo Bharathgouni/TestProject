@@ -11,7 +11,7 @@
       ],
       "essential": true,
       "name": "test-container",
-      "image": "nginx",
+      "image": "761536657211.dkr.ecr.us-east-2.amazonaws.com/test-project:v_${BUILD_NUMBER}",
       "cpu": 0
     }
   ],
