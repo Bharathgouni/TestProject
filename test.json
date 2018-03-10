@@ -2,11 +2,11 @@
 "containerDefinitions":[
     {
       "volumesFrom": [],
-      "memory": 1200,
+      "memory": 500,
       "portMappings": [
         {
-          "hostPort": 0,
-          "containerPort": 5110,
+          "hostPort": 80,
+          "containerPort": 9090,
           "protocol": "tcp"
         }
       ],
